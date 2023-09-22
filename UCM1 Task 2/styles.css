@@ -1,0 +1,126 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 25% 75%;
+}
+
+#grid-nav {
+    grid-column: 1 /2 ;
+    position: absolute;
+    top: 30%;
+}
+
+#grid-section {
+    grid-column: 2 / 3;
+}
+
+#grid-aside {
+    grid-column: 3 / 4;
+}
+
+header {
+    grid-area: head;
+    background-color: #D80032;
+}
+
+nav {
+    grid-area: nav;
+}
+
+section {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    margin-right: 15%;
+}
+
+* {
+    font-size: 1.2rem;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+    grid-template-areas:
+        "head head head"
+        "nav main aside";
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+    color: rgb(255,255,255);
+}
+
+
+table {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    position: relative;
+    top: 5%;
+}
+
+form {
+    margin-top: 20%
+}
+
+label {
+    display: inline-block;
+    min-width: 300px;
+    text-align: left;
+}
+
+input[type=text], input[type=email] {
+    box-sizing: border-box;
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid rgb(60,60,60);
+    border-radius: 6px;
+}
+
+button {
+    width: 200px;
+    background-color:#D80032;
+    color: rgb(255,255,255);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+nav li {
+    list-style: none;
+    margin-top: 40%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+img {
+    width: 25vw;
+    float: left;
+    margin-left: 5%;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.smallTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+th {
+    color:rgb(255, 0, 0)
+}
+
+aside > div {
+    margin-top: 100%;
+    margin-left: 5%;
+}
